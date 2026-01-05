@@ -12,3 +12,4 @@ echo Opening Link Saver...
 start "" "http://localhost/linkeds/index.php"
 
 echo services started and browser opened!
+echo script is working 
