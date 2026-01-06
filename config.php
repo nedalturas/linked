@@ -9,5 +9,24 @@ try {
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $e) {
     die("Connection failed: " . $e->getMessage());
+
 }
+
+function isLoggedIn(){
+
+  return isset($_SESSION['user_id']);
+}
+
+function requireLogin() {
+
+      if (!isLoggedIn()) {
+
+                header('Location: login.php');
+
+                        exit;
+
+                    }
+
+}
+
 ?>
