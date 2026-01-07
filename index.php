@@ -45,7 +45,7 @@ $links = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
         <h1>Link Saver</h1>
-        <a href="logout.php" class="logout-btn">Logout</a>
+        <a href="logout.php" class="ui red logout-btn">Logout</a>
       </div>
 
     </div>
