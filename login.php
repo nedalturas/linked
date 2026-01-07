@@ -67,11 +67,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <link rel="stylesheet" href="style.css">
 
+
+  <!-- jQuery (Required for Fomantic UI) -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    
+
+    <!-- Fomantic UI CSS -->
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.css">
+
+    
+
+    <!-- Fomantic UI JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.js"></script>
+
+
+
+
 </head>
 
 <body>
 
-    <div class="container auth-container">
+    <div class="ui container auth-container">
 
         <h1>Login to Link Saver</h1>
 
