@@ -13,12 +13,39 @@ $links = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Link Saver</title>
     <link rel="stylesheet" href="style.css">
+
+  <!-- jQuery (Required for Fomantic UI) -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    
+
+    <!-- Fomantic UI CSS -->
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.css">
+
+    
+
+    <!-- Fomantic UI JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.js"></script>
+
+
+
 </head>
 <body>
     
     <div class="container">
-        <h1>Link Saver</h1>
+      
+        <div class="header">
 
+          <h1>Link Saver</h1>
+          <div class="user-info">
+
+          <a href="logout.php" class="logout-btn">Logout</a>
+          </div>
+
+        </div>        
 
         <form action="save.php" method="POST" class="add-form">
             <input type="text" name="title" placeholder="Link Title" required />
